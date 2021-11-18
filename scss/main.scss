@@ -9,9 +9,68 @@
 }
 
 body {
-    background-color: #333;
+    background-color: $main-bcg;
+    color: $light-text;
 }
 
 h2 {
     text-transform: uppercase;
+    text-align: center;
+}
+
+.underline-box{
+    margin: 0 auto;
+    width: 50px;
+    height: 20px;
+    align-items: center;
+    
+    
+    .underline-1 {
+        margin: 0 10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+
+    .underline-2 {
+    
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+    }
+
+    .underline {
+        margin: 0 auto;
+    
+        background-color: $orange;
+        
+        
+    }
+}
+
+
+nav {
+    text-transform: uppercase;
+
+    .navbar-brand {
+        color: $main-color;
+
+        span {
+            color: $light-text;
+        }
+    }
+
+    .nav-link {
+        color: $light-text;
+        transition: color .3s;
+    }
+
+    .nav-link:hover {
+        color: $main-color;
+    }
+
+    .active {
+        color: $orange;
+    }
+    
 }
