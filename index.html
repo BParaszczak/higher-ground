@@ -27,7 +27,7 @@
 			crossorigin="anonymous"
 		></script>
 	</head>
-	<body>
+	<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="82">
 		<nav class="navbar navbar-expand-lg position-fixed w-100 t-0 py-3">
 			<div class="container">
 				<a class="navbar-brand" href="#"
@@ -42,10 +42,10 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
+					<div class="navbar-nav ms-auto">
 						<a class="nav-link active" href="#home">Home</a>
 						<a class="nav-link" href="#about-us">about us</a>
 						<a class="nav-link" href="#trekking">trekking</a>
@@ -58,80 +58,134 @@
 			</div>
 		</nav>
 
-		<header id="home"></header>
-
-		<!-- ABOUT US -->
-		<section id="about-us" class="about-us py-5">
-			<h2>about us</h2>
-			<div class="underline-box d-flex">
-				<div class="underline underline-1"></div>
-				<div class="underline underline-2"></div>
-				<div class="underline underline-1"></div>
+		<header id="home" class="home">
+			<div class="hero-img">
+				<div class="hero-text">
+					<h1><span>higher</span>ground</h1>
+					<p>Reaching for adventure</p>
+					<a href="#about-us" type="button" class="btn btn-outline-secondary">
+						Join us!
+					</a>
+				</div>
+				<div class="hero-shadow"></div>
 			</div>
-		</section>
+			<a href="#about-us" class="chevron-down"
+				><i class="fas fa-chevron-down"></i
+			></a>
+			<!-- jebany link nie działa; w przeglądarce dodaje się atrybut aria-hidden="true"; nie wiem jak to obejść-->
+		</header>
+		<main>
+			<!-- ABOUT US -->
+			<section id="about-us" class="about-us py-5">
+				<div class="container">
+					<h2>about us</h2>
+					<div class="dot-box d-flex">
+						<div class="dot dot-1"></div>
+						<div class="dot dot-2"></div>
+						<div class="dot dot-1"></div>
+					</div>
+					<div class="aboutus-wrap row">
+						<div class="col-sm-6 col-md-4 text-center">
+							<p><i class="fas fa-hiking"></i></p>
+							<p class="aboutus-card-title">hiking</p>
+							<p class="aboutus-card-text">
+								The most epic mountain experience!
+							</p>
+						</div>
+						<div class="col-sm-6 col-md-4 text-center">
+							<p><i class="fas fa-hands-helping"></i></p>
+							<p class="aboutus-card-title">climbing school</p>
+							<p class="aboutus-card-text">For those about to ROCK!</p>
+						</div>
+						<div class="col-sm-6 col-md-4 text-center">
+							<p><i class="fas fa-skiing"></i></p>
+							<p class="aboutus-card-title">skitouring</p>
+							<p class="aboutus-card-text">Snow is our reason to go.</p>
+						</div>
+						<div class="col-sm-6 col-md-4 text-center">
+							<p><i class="far fa-snowflake"></i></p>
+							<p class="aboutus-card-title">winter school</p>
+							<p class="aboutus-card-text">
+								Safety first! We will get you through it.
+							</p>
+						</div>
+						<div class="col-sm-6 col-md-4 text-center">
+							<p><i class="far fa-compass"></i></p>
+							<p class="aboutus-card-title">expeditions</p>
+							<p class="aboutus-card-text">Have a mountain dream? Tell us!</p>
+						</div>
+						<div class="col-sm-6 col-md-4 text-center">
+							<p><i class="far fa-image"></i></p>
+							<p class="aboutus-card-title">unforgettable time</p>
+							<p class="aboutus-card-text">
+								Working together on your best memories.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-		<!-- TREKKING -->
-		<section id="trekking" class="trekking py-5">
-			<h2>trekking</h2>
-            <div class="underline-box d-flex">
-				<div class="underline underline-1"></div>
-				<div class="underline underline-2"></div>
-				<div class="underline underline-1"></div>
-			</div>
-			
-		</section>
+			<!-- TREKKING -->
+			<section id="trekking" class="trekking py-5">
+				<h2>trekking</h2>
+				<div class="dot-box d-flex">
+					<div class="dot dot-1"></div>
+					<div class="dot dot-2"></div>
+					<div class="dot dot-1"></div>
+				</div>
+			</section>
 
-		<!-- EXPEDITIONS -->
-		<section id="expeditions" class="expeditions py-5">
-			<h2>expeditions</h2>
-            <div class="underline-box d-flex">
-				<div class="underline underline-1"></div>
-				<div class="underline underline-2"></div>
-				<div class="underline underline-1"></div>
-			</div>
-			
-		</section>
+			<!-- EXPEDITIONS -->
+			<section id="expeditions" class="expeditions py-5">
+				<h2>expeditions</h2>
+				<div class="dot-box d-flex">
+					<div class="dot dot-1"></div>
+					<div class="dot dot-2"></div>
+					<div class="dot dot-1"></div>
+				</div>
+			</section>
 
-		<!-- MOUNTAIN SCHOOL -->
-		<section id="mountain-school" class="mountain-school py-5">
-			<h2>mountain school</h2>
-			<div class="underline-box d-flex">
-				<div class="underline underline-1"></div>
-				<div class="underline underline-2"></div>
-				<div class="underline underline-1"></div>
-			</div>
-		</section>
+			<!-- MOUNTAIN SCHOOL -->
+			<section id="mountain-school" class="mountain-school py-5">
+				<h2>mountain school</h2>
+				<div class="dot-box d-flex">
+					<div class="dot dot-1"></div>
+					<div class="dot dot-2"></div>
+					<div class="dot dot-1"></div>
+				</div>
+				<div class="container"></div>
+			</section>
 
-		<!-- TEAM -->
-		<section id="team" class="team py-5">
-			<h2>team</h2>
-			<div class="underline-box d-flex">
-				<div class="underline underline-1"></div>
-				<div class="underline underline-2"></div>
-				<div class="underline underline-1"></div>
-			</div>
-		</section>
+			<!-- TEAM -->
+			<section id="team" class="team py-5">
+				<h2>team</h2>
+				<div class="dot-box d-flex">
+					<div class="dot dot-1"></div>
+					<div class="dot dot-2"></div>
+					<div class="dot dot-1"></div>
+				</div>
+			</section>
 
-		<!-- RECOMMENDATIONS -->
-		<section id="recommendations" class="recommendations py-5">
-			<h2>recommendations</h2>
-			<div class="underline-box d-flex">
-				<div class="underline underline-1"></div>
-				<div class="underline underline-2"></div>
-				<div class="underline underline-1"></div>
-			</div>
-		</section>
+			<!-- RECOMMENDATIONS -->
+			<section id="recommendations" class="recommendations py-5">
+				<h2>recommendations</h2>
+				<div class="dot-box d-flex">
+					<div class="dot dot-1"></div>
+					<div class="dot dot-2"></div>
+					<div class="dot dot-1"></div>
+				</div>
+			</section>
 
-		<!-- CONTACT -->
-		<section id="contact" class="contact py-5">
-			<h2>contact</h2>
-			<div class="underline-box d-flex">
-				<div class="underline underline-1"></div>
-				<div class="underline underline-2"></div>
-				<div class="underline underline-1"></div>
-			</div>
-		</section>
-
+			<!-- CONTACT -->
+			<section id="contact" class="contact py-5">
+				<h2>contact</h2>
+				<div class="dot-box d-flex">
+					<div class="dot dot-1"></div>
+					<div class="dot dot-2"></div>
+					<div class="dot dot-1"></div>
+				</div>
+			</section>
+		</main>
 		<footer>
 			<p>&copy HigherGround 2021</p>
 		</footer>
