@@ -17,12 +17,16 @@ body {
   color: #e6edfc;
 }
 
-h2 {
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
   text-transform: uppercase;
   text-align: center;
 }
 
-.dot-box {
+.section-header .dot-box {
   margin: 0 auto;
   width: 50px;
   height: 20px;
@@ -31,20 +35,20 @@ h2 {
           align-items: center;
 }
 
-.dot-box .dot-1 {
+.section-header .dot-box .dot-1 {
   margin: 0 10px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
 }
 
-.dot-box .dot-2 {
+.section-header .dot-box .dot-2 {
   width: 9px;
   height: 9px;
   border-radius: 50%;
 }
 
-.dot-box .dot {
+.section-header .dot-box .dot {
   margin: 0 auto;
   background-color: #ffa011;
 }
@@ -54,7 +58,7 @@ nav {
   text-transform: uppercase;
   z-index: 20;
   background-color: #232b3e;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 nav .navbar-brand {
@@ -143,8 +147,8 @@ header .hero-text .btn {
   margin-top: 10px;
   color: #ffa011;
   border-color: #ffa011;
-  -webkit-transition: background-color scale .3s;
-  transition: background-color scale .3s;
+  -webkit-transition: background-color scale 0.3s;
+  transition: background-color scale 0.3s;
 }
 
 header .hero-text .btn:hover {
@@ -177,13 +181,53 @@ header .fa-chevron-down {
   font-size: 30px;
 }
 
+.about-us .aboutus-card {
+  margin-bottom: 30px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.about-us .aboutus-card:hover {
+  color: #6d98f7;
+}
+
 .about-us .aboutus-card-title {
   text-transform: uppercase;
+  font-size: 20px;
+}
+
+.trekking {
+  position: relative;
+  background-image: url("../img/trekking-sm.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #232b3e;
+  z-index: -12;
+}
+
+.trekking h2 {
+  color: #e6edfc;
+}
+
+.trekking .trekking-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 43, 62, 0.8);
+  z-index: -3;
+}
+
+.trekking .container {
+  margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
   header .hero-img {
     background-image: url("../img/mountaineer-lg.jpg");
+  }
+  .trekking {
+    background-image: url("../img/trekking-lg.jpg");
   }
 }
 /*# sourceMappingURL=main.css.map */

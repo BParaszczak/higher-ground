@@ -28,7 +28,7 @@
 		></script>
 	</head>
 	<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="82">
-		<nav class="navbar navbar-expand-lg position-fixed w-100 t-0 py-3">
+		<nav id="navbar" class="navbar navbar-expand-lg position-fixed w-100 t-0 py-3">
 			<div class="container">
 				<a class="navbar-brand" href="#"
 					><i class="fas fa-mountain"></i><span> Higher</span>Ground</a
@@ -49,8 +49,8 @@
 						<a class="nav-link active" href="#home">Home</a>
 						<a class="nav-link" href="#about-us">about us</a>
 						<a class="nav-link" href="#trekking">trekking</a>
-						<a class="nav-link" href="#expeditions">expeditions</a>
 						<a class="nav-link" href="#mountain-school">mountain school</a>
+						<a class="nav-link" href="#skitours-mountaineering">ski tours & mountaineering</a>
 						<a class="nav-link" href="#team">team</a>
 						<a class="nav-link" href="#contact">contact</a>
 					</div>
@@ -78,45 +78,49 @@
 			<!-- ABOUT US -->
 			<section id="about-us" class="about-us py-5">
 				<div class="container">
-					<h2>about us</h2>
-					<div class="dot-box d-flex">
-						<div class="dot dot-1"></div>
-						<div class="dot dot-2"></div>
-						<div class="dot dot-1"></div>
+					<div class="section-header">
+						<h2>about us</h2>
+						<div class="dot-box d-flex">
+							<div class="dot dot-1"></div>
+							<div class="dot dot-2"></div>
+							<div class="dot dot-1"></div>
+						</div>
 					</div>
 					<div class="aboutus-wrap row">
-						<div class="col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center">
 							<p><i class="fas fa-hiking"></i></p>
-							<p class="aboutus-card-title">hiking</p>
+							<p class="aboutus-card-title mb-0">hiking</p>
 							<p class="aboutus-card-text">
 								The most epic mountain experience!
 							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center">
 							<p><i class="fas fa-hands-helping"></i></p>
-							<p class="aboutus-card-title">climbing school</p>
+							<p class="aboutus-card-title mb-0">climbing school</p>
 							<p class="aboutus-card-text">For those about to ROCK!</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center">
 							<p><i class="fas fa-skiing"></i></p>
-							<p class="aboutus-card-title">skitouring</p>
+							<p class="aboutus-card-title mb-0">skitouring</p>
 							<p class="aboutus-card-text">Snow is our reason to go.</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center">
-							<p><i class="far fa-snowflake"></i></p>
-							<p class="aboutus-card-title">winter school</p>
+						<div class="aboutus-card col-sm-6 col-md-4 text-center">
+							<p><i class="fas fa-snowman"></i></i></p>
+							<p class="aboutus-card-title mb-0">winter school</p>
 							<p class="aboutus-card-text">
 								Safety first! We will get you through it.
 							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center">
 							<p><i class="far fa-compass"></i></p>
-							<p class="aboutus-card-title">expeditions</p>
-							<p class="aboutus-card-text">Have a mountain dream? Tell us!</p>
+							<p class="aboutus-card-title mb-0">expeditions</p>
+							<p class="aboutus-card-text">
+								Tell us about your mountain dreams!
+							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center">
 							<p><i class="far fa-image"></i></p>
-							<p class="aboutus-card-title">unforgettable time</p>
+							<p class="aboutus-card-title mb-0">unforgettable time</p>
 							<p class="aboutus-card-text">
 								Working together on your best memories.
 							</p>
@@ -127,62 +131,230 @@
 
 			<!-- TREKKING -->
 			<section id="trekking" class="trekking py-5">
-				<h2>trekking</h2>
-				<div class="dot-box d-flex">
-					<div class="dot dot-1"></div>
-					<div class="dot dot-2"></div>
-					<div class="dot dot-1"></div>
+				<div class="section-header">
+					<h2>trekking</h2>
+					<div class="dot-box d-flex">
+						<div class="dot dot-1"></div>
+						<div class="dot dot-2"></div>
+						<div class="dot dot-1"></div>
+					</div>
 				</div>
-			</section>
-
-			<!-- EXPEDITIONS -->
-			<section id="expeditions" class="expeditions py-5">
-				<h2>expeditions</h2>
-				<div class="dot-box d-flex">
-					<div class="dot dot-1"></div>
-					<div class="dot dot-2"></div>
-					<div class="dot dot-1"></div>
+				<div class="container">
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="/img/dolomites.jpg"
+									class="card-img-top"
+									alt="Dolomites peaks"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Dolomites</h5>
+									<p class="card-text">
+										This is a longer card with supporting text below as a
+										natural lead-in to additional content. This content is a
+										little bit longer.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="/img/mont-blanc.jpg"
+									class="card-img-top"
+									alt="View of Mont Blanc"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Tour de Mont Blanc</h5>
+									<p class="card-text">This is a short card.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="/img/aosta.jpg"
+									class="card-img-top"
+									alt="People hiking in Aosta Valley"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Aosta Valley</h5>
+									<p class="card-text">
+										This is a longer card with supporting text below as a
+										natural lead-in to additional content.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="/img/grass.jpg"
+									class="card-img-top"
+									alt="Alps in Autumn"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Colors of Alps</h5>
+									<p class="card-text">
+										This is a longer card with supporting text below as a
+										natural lead-in to additional content. This content is a
+										little bit longer.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="/img/tauern.jpg"
+									class="card-img-top"
+									alt="High Tauern view"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">High Tauern</h5>
+									<p class="card-text">
+										This is a longer card with supporting text below as a
+										natural lead-in to additional content. This content is a
+										little bit longer.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="/img/misty_mountain.jpg"
+									class="card-img-top"
+									alt="Misty valley view"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Misty Mountain Top</h5>
+									<p class="card-text">
+										This is a longer card with supporting text below as a
+										natural lead-in to additional content. This content is a
+										little bit longer.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="/img/valleys.jpg"
+									class="card-img-top"
+									alt="Green mountain view"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Valleys of Green and Grey</h5>
+									<p class="card-text">
+										This is a longer card with supporting text below as a
+										natural lead-in to additional content. This content is a
+										little bit longer.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img
+									src="/img/winter-walk.jpg"
+									class="card-img-top"
+									alt="A hiker in winter scenery"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Winter walks</h5>
+									<p class="card-text">
+										This is a longer card with supporting text below as a
+										natural lead-in to additional content. This content is a
+										little bit longer.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+				<div class="trekking-shadow"></div>
 			</section>
 
 			<!-- MOUNTAIN SCHOOL -->
 			<section id="mountain-school" class="mountain-school py-5">
-				<h2>mountain school</h2>
-				<div class="dot-box d-flex">
-					<div class="dot dot-1"></div>
-					<div class="dot dot-2"></div>
-					<div class="dot dot-1"></div>
+				<div class="section-header">
+					<h2>mountain school</h2>
+					<div class="dot-box d-flex">
+						<div class="dot dot-1"></div>
+						<div class="dot dot-2"></div>
+						<div class="dot dot-1"></div>
+					</div>
 				</div>
-				<div class="container"></div>
+				<div class="container">
+					<div class="d-flex text-center">
+						<div class="school-card col-md-6 col-lg-4 col-xl-2">
+							<i class="fas fa-hard-hat"></i>
+							<p class="school-number">4</p>
+							<p class="school-text">levels of rock-climbing training</p>
+						</div>
+						<div class="school-card col-md-6 col-lg-4 col-xl-2">
+							<i class="fas fa-skiing-nordic"></i>
+							<p class="school-number">1866</p>
+							<p class="school-text">satisfied ski students</p>
+						</div>
+						<div class="school-card col-md-6 col-lg-4 col-xl-2">
+							<i class="far fa-snowflake"></i>
+							<p class="school-number">315</p>
+							<p class="school-text">winter climbing camps completed</p>
+						</div>
+						<div class="school-card col-md-6 col-lg-4 col-xl-2">
+							<i class="fas fa-medkit"></i>
+							<p class="school-number">54</p>
+							<p class="school-text">first aid and avalanche courses per year</p>
+						</div><div class="school-card col-md-6 col-lg-4 col-xl-2">
+							<i class="fas fa-users"></i>
+							<p class="school-number">5</p>
+							<p class="school-text">highly experienced instructors</p>
+						</div><div class="school-card col-md-6 col-lg-4 col-xl-2">
+							<i class="fas fa-trophy"></i>
+							<p class="school-number">4</p>
+							<p class="school-text">regional tourism chamber awards</p>
+						</div>
+	
+					</div>
+				</div>
 			</section>
 
-			<!-- TEAM -->
+			<!-- SKITOURING -->
+			<section id="skitouring" class="skitouring py-5">
+				<div class="section-header">
+					<h2>ski tours & mountaineering</h2>
+					<div class="dot-box d-flex">
+						<div class="dot dot-1"></div>
+						<div class="dot dot-2"></div>
+						<div class="dot dot-1"></div>
+					</div>
+				</div>
+			</section>
+
+						<!-- TEAM -->
 			<section id="team" class="team py-5">
-				<h2>team</h2>
-				<div class="dot-box d-flex">
-					<div class="dot dot-1"></div>
-					<div class="dot dot-2"></div>
-					<div class="dot dot-1"></div>
-				</div>
-			</section>
-
-			<!-- RECOMMENDATIONS -->
-			<section id="recommendations" class="recommendations py-5">
-				<h2>recommendations</h2>
-				<div class="dot-box d-flex">
-					<div class="dot dot-1"></div>
-					<div class="dot dot-2"></div>
-					<div class="dot dot-1"></div>
+				<div class="section-header">
+					<h2>team</h2>
+					<div class="dot-box d-flex">
+						<div class="dot dot-1"></div>
+						<div class="dot dot-2"></div>
+						<div class="dot dot-1"></div>
+					</div>
 				</div>
 			</section>
 
 			<!-- CONTACT -->
 			<section id="contact" class="contact py-5">
-				<h2>contact</h2>
-				<div class="dot-box d-flex">
-					<div class="dot dot-1"></div>
-					<div class="dot dot-2"></div>
-					<div class="dot dot-1"></div>
+				<div class="section-header">
+					<h2>contact</h2>
+					<div class="dot-box d-flex">
+						<div class="dot dot-1"></div>
+						<div class="dot dot-2"></div>
+						<div class="dot dot-1"></div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -196,6 +368,6 @@
 			crossorigin="anonymous"
 		></script>
 
-		<script src="js/main.js"></script>
+		<script src="/js/main.js"></script>
 	</body>
 </html>

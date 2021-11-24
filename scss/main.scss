@@ -13,39 +13,43 @@ html {
 }
 
 body {
-    position: relative;
+	position: relative;
 	background-color: $main-bg;
 	color: $light-text;
 }
 
-h2 {
-	text-transform: uppercase;
-	text-align: center;
-}
+.section-header {
+	margin-bottom: 40px;
 
-.dot-box {
-	margin: 0 auto;
-	width: 50px;
-	height: 20px;
-	align-items: center;
-
-	.dot-1 {
-		margin: 0 10px;
-		width: 6px;
-		height: 6px;
-		border-radius: 50%;
+	h2 {
+		text-transform: uppercase;
+		text-align: center;
 	}
 
-	.dot-2 {
-		width: 9px;
-		height: 9px;
-		border-radius: 50%;
-	}
-
-	.dot {
+	.dot-box {
 		margin: 0 auto;
+		width: 50px;
+		height: 20px;
+		align-items: center;
 
-		background-color: $orange;
+		.dot-1 {
+			margin: 0 10px;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+		}
+
+		.dot-2 {
+			width: 9px;
+			height: 9px;
+			border-radius: 50%;
+		}
+
+		.dot {
+			margin: 0 auto;
+
+			background-color: $orange;
+		}
 	}
 }
 
@@ -54,7 +58,7 @@ nav {
 	text-transform: uppercase;
 	z-index: 20;
 	background-color: $main-bg;
-    opacity: .8;
+	opacity: 0.8;
 
 	.navbar-brand {
 		color: $main-color;
@@ -77,14 +81,14 @@ nav {
 		color: $orange;
 	}
 
-    .fa-bars {
-        color: $light-text;
-    }
+	.fa-bars {
+		color: $light-text;
+	}
 
-    .navbar-toggler:focus {
-        border: 1px solid $main-bg;
-        box-shadow: none;
-    }
+	.navbar-toggler:focus {
+		border: 1px solid $main-bg;
+		box-shadow: none;
+	}
 }
 
 header {
@@ -93,95 +97,130 @@ header {
 	.hero-img {
 		height: 100vh;
 		width: 100%;
-		background-image: url('../img/mountaineer-sm.jpg');
-        background-position: center;
-        background-size: cover;    
-        z-index: 0;
+		background-image: url("../img/mountaineer-sm.jpg");
+		background-position: center;
+		background-size: cover;
+		z-index: 0;
 	}
 
 	.hero-text {
-        position: absolute;
-        display: flex;
-        height: 100%;
-        width: 100%;
-        padding: 10px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        z-index: 5;
+		position: absolute;
+		display: flex;
+		height: 100%;
+		width: 100%;
+		padding: 10px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		z-index: 5;
 
-        h1 {
-            margin: 0 10px;
-            text-transform: uppercase;
-            color: $main-color;
-            font-size: 48px;
-        
+		h1 {
+			margin: 0 10px;
+			text-transform: uppercase;
+			color: $main-color;
+			font-size: 48px;
 
-            span {
-                color: $light-text;
-            }
-            
-        }
+			span {
+				color: $light-text;
+			}
+		}
 
-        p {
-            font-size: 26px;
-        }
+		p {
+			font-size: 26px;
+		}
 
-        .btn {
-            margin-top: 10px;
-            color: $orange;
-            border-color: $orange;
-            transition: background-color scale .3s;
+		.btn {
+			margin-top: 10px;
+			color: $orange;
+			border-color: $orange;
+			transition: background-color scale 0.3s;
+		}
 
-        }
-
-        .btn:hover {
-            background-color: $main-bg;
-            opacity: 0.7;
-            transform: scale(1.1);
-        }
-
+		.btn:hover {
+			background-color: $main-bg;
+			opacity: 0.7;
+			transform: scale(1.1);
+		}
 	}
 
-    .hero-shadow {
+	.hero-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(11, 50, 80, 0.6);
+		z-index: 2;
+	}
+
+	.fa-chevron-down {
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: $orange;
+		z-index: 4;
+	}
+}
+
+.about-us {
+	i {
+		font-size: 30px;
+	}
+
+	.aboutus-card {
+		margin-bottom: 30px;
+		transition: color 0.3s;
+	}
+
+	.aboutus-card:hover {
+		color: $main-color;
+	}
+
+	.aboutus-card-title {
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+}
+
+.trekking {
+	position: relative;
+	background-image: url("../img/trekking-sm.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+    color: $main-bg;
+	z-index: -12;
+
+    h2 {
+        color: $light-text;
+    }
+
+    .trekking-shadow {
         position: absolute;
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(11, 50, 80, .6);
-        z-index: 2;
+        background-color: rgba(35, 43, 62, 0.8);
+        z-index: -3;
     }
 
-    .fa-chevron-down {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: $orange;
-        z-index: 4;
+    .container {
+        margin-bottom: 40px;
     }
+  
+
 }
-
-.about-us {
-
-    
-
-    i {
-        font-size: 30px;
-    }
-    
-    .aboutus-card-title {
-        text-transform: uppercase;
-    }
-}
-
-
 
 @media (min-width: 992px) {
-    header {
-        .hero-img {
-            background-image: url('../img/mountaineer-lg.jpg');
-        }
-    }
+	header {
+		.hero-img {
+			background-image: url("../img/mountaineer-lg.jpg");
+		}
+	}
+
+	.trekking {
+		
+		background-image: url("../img/trekking-lg.jpg");
+		
+	}
 }
