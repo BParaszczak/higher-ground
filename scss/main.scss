@@ -211,6 +211,32 @@ header {
 
 }
 
+.mountain-school {
+
+    text-transform: uppercase;
+
+    i {
+        margin: 40px 0 15px 0;
+        font-size: 42px;
+    
+
+    }
+
+    .school-number {
+        font-size: 28px;
+    }
+
+    .school-text {
+        margin: 0 20px;
+        
+    }
+}
+
+.skitours-mountaineering {
+    background-color: $light-text;
+    color: $main-bg;
+}
+
 @media (min-width: 992px) {
 	header {
 		.hero-img {

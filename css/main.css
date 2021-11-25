@@ -222,6 +222,28 @@ header .fa-chevron-down {
   margin-bottom: 40px;
 }
 
+.mountain-school {
+  text-transform: uppercase;
+}
+
+.mountain-school i {
+  margin: 40px 0 15px 0;
+  font-size: 42px;
+}
+
+.mountain-school .school-number {
+  font-size: 28px;
+}
+
+.mountain-school .school-text {
+  margin: 0 20px;
+}
+
+.skitours-mountaineering {
+  background-color: #e6edfc;
+  color: #232b3e;
+}
+
 @media (min-width: 992px) {
   header .hero-img {
     background-image: url("../img/mountaineer-lg.jpg");
