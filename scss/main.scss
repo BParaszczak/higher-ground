@@ -188,53 +188,62 @@ header {
 	background-image: url("../img/trekking-sm.jpg");
 	background-size: cover;
 	background-attachment: fixed;
-    color: $main-bg;
+	color: $main-bg;
 	z-index: -12;
 
-    h2 {
-        color: $light-text;
-    }
+	h2 {
+		color: $light-text;
+	}
 
-    .trekking-shadow {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(35, 43, 62, 0.8);
-        z-index: -3;
-    }
+	.trekking-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(35, 43, 62, 0.8);
+		z-index: -3;
+	}
 
-    .container {
-        margin-bottom: 40px;
-    }
-  
-
+	.container {
+		margin-bottom: 40px;
+	}
 }
 
 .mountain-school {
+	text-transform: uppercase;
 
-    text-transform: uppercase;
+	i {
+		margin: 40px 0 15px 0;
+		font-size: 42px;
+	}
 
-    i {
-        margin: 40px 0 15px 0;
-        font-size: 42px;
-    
+	.school-number {
+		font-size: 28px;
+	}
 
-    }
-
-    .school-number {
-        font-size: 28px;
-    }
-
-    .school-text {
-        margin: 0 20px;
-        
-    }
+	.school-text {
+		margin: 0 20px;
+	}
 }
 
 .skitours-mountaineering {
-    background-color: $light-text;
-    color: $main-bg;
+	background-color: $light-text;
+	color: $main-bg;
+
+	q {
+		font-size: 20px;
+	}
+
+	.carousel-item {
+		height: 600px;
+		img {
+			bottom: 0;
+		}
+	}
+
+    .card-body {
+        height: 160px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -245,8 +254,11 @@ header {
 	}
 
 	.trekking {
-		
 		background-image: url("../img/trekking-lg.jpg");
-		
+	}
+
+	.skitours-mountaineering {
+		.carousel-item {
+		}
 	}
 }

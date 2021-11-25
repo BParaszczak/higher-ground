@@ -244,6 +244,22 @@ header .fa-chevron-down {
   color: #232b3e;
 }
 
+.skitours-mountaineering q {
+  font-size: 20px;
+}
+
+.skitours-mountaineering .carousel-item {
+  height: 600px;
+}
+
+.skitours-mountaineering .carousel-item img {
+  bottom: 0;
+}
+
+.skitours-mountaineering .card-body {
+  height: 160px;
+}
+
 @media (min-width: 992px) {
   header .hero-img {
     background-image: url("../img/mountaineer-lg.jpg");
