@@ -306,8 +306,64 @@ header {
 }
 
 .contact {
-	background-color: $light-text;
-	color: $main-bg;
+	position: relative;
+	color: $light-text;
+	background-image: url("../img/contact-sm.jpg");
+	background-attachment: fixed;
+	background-position: cover;
+	background-repeat: no-repeat;
+	// z bg-rpt nie wyświetla się tło dla mobili, bez bgrpt wyświetla się sąsiadująco
+	z-index: -3;
+
+	.address {
+		
+	}
+
+	.contact-name {
+		text-transform: uppercase;
+		color: $orange;
+		font-size: 20px;
+	}
+
+	i {
+		padding: 4px;
+		color: $orange;
+		font-size: 24px;
+	}
+
+	.social {
+		transition: transform .3s;
+	}
+
+	.social:hover {
+		color: $main-color;
+		transform: scale(1.1);
+	}
+
+	.mail {
+		text-decoration: none;
+		color: $main-color;
+		transition: color .3s;
+	}
+
+	.mail:hover {
+		cursor: pointer;
+		color: $orange;
+	}
+
+	
+
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(35, 43, 62, 0.8);
+		z-index: -4;
+	}
+
+
+	
 }
 
 @media (min-width: 768px) {
@@ -317,6 +373,12 @@ header {
 				font-size: 48px;
 			}
 		}
+	}
+
+	.contact {
+		
+		background-image: url("../img/contact-lg.jpg");
+			
 	}
 }
 
@@ -335,4 +397,6 @@ header {
 		.carousel-item {
 		}
 	}
+
+	
 }
