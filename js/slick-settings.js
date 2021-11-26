@@ -5,7 +5,7 @@ $(document).ready(function(){
         pauseOnHover: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-
+        arrows: false,
         responsive: [
             {
                 breakpoint: 768,

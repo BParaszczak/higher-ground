@@ -130,9 +130,10 @@ header .hero-text {
 
 header .hero-text h1 {
   margin: 0 10px;
+  padding: 10px;
   text-transform: uppercase;
   color: #6d98f7;
-  font-size: 48px;
+  font-size: 32px;
 }
 
 header .hero-text h1 span {
@@ -300,6 +301,14 @@ header .fa-chevron-down {
      object-fit: cover;
 }
 
+.team .card-body {
+  height: 200px;
+}
+
+.team .card-footer {
+  height: 70px;
+}
+
 .team .anna,
 .team .alex {
   -o-object-position: 20% 20%;
@@ -308,6 +317,17 @@ header .fa-chevron-down {
 
 .team small {
   text-transform: uppercase;
+}
+
+.contact {
+  background-color: #e6edfc;
+  color: #232b3e;
+}
+
+@media (min-width: 768px) {
+  header .hero-text h1 {
+    font-size: 48px;
+  }
 }
 
 @media (min-width: 992px) {
