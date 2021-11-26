@@ -277,6 +277,32 @@ header {
     }
 }
 
+.team {
+
+
+	.card {
+		color: $main-bg;
+	}
+
+	.card-img-top {
+		height: 200px;
+		object-fit: cover;
+	
+	}
+
+	.anna,
+	.alex {
+		object-position: 20% 20%;
+		
+	}
+
+	small {
+		text-transform: uppercase;
+	}
+}
+
+
+
 @media (min-width: 992px) {
 	header {
 		.hero-img {

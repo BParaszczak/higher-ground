@@ -20,6 +20,8 @@
 			rel="stylesheet"
 		/>
 
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 		<link rel="stylesheet" href="css/main.css" />
 
 		<script
@@ -435,47 +437,72 @@
 						<div class="dot dot-2"></div>
 						<div class="dot dot-1"></div>
 					</div>
-					<div class="container">
-						<div class="row row-cols-1 row-cols-md-3 g-4">
-							<div class="col">
-							  <div class="card h-100">
-								<img src="..." class="card-img-top" alt="...">
-								<div class="card-body">
-								  <h5 class="card-title">Card title</h5>
-								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								</div>
-								<div class="card-footer">
-								  <small class="text-muted">Last updated 3 mins ago</small>
-								</div>
-							  </div>
-							</div>
-							<div class="col">
-							  <div class="card h-100">
-								<img src="..." class="card-img-top" alt="...">
-								<div class="card-body">
-								  <h5 class="card-title">Card title</h5>
-								  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-								</div>
-								<div class="card-footer">
-								  <small class="text-muted">Last updated 3 mins ago</small>
-								</div>
-							  </div>
-							</div>
-							<div class="col">
-							  <div class="card h-100">
-								<img src="..." class="card-img-top" alt="...">
-								<div class="card-body">
-								  <h5 class="card-title">Card title</h5>
-								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-								</div>
-								<div class="card-footer">
-								  <small class="text-muted">Last updated 3 mins ago</small>
-								</div>
-							  </div>
-							</div>
-						  </div>
-					</div>
 				</div>
+				<div class="container">
+					<div class="card-group team-carousel row g-4 my-3">
+						<div class="col">
+							<div class="card h-100">
+								<img src="/img/team/Maria.jpg" class="card-img-top" alt="Maria">
+								<div class="card-body">
+									<h5 class="card-title">Maria</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">rock-climbing, ice-climbing, skitouring</small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img src="/img/team/Eva.jpg" class="card-img-top" alt="Eva">
+								<div class="card-body">
+									<h5 class="card-title">Eva</h5>
+									<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">rock-climbing, trekking, first-aid</small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img src="/img/team/Anna.jpg" class="card-img-top anna" alt="Anna">
+								<div class="card-body">
+									<h5 class="card-title">Anna</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">rock-climbing, skitouring, avalanche training</small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img src="/img/team/Stefan.jpg" class="card-img-top" alt="Stefan">
+								<div class="card-body">
+									<h5 class="card-title">Stefan</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">trekking, skitouring, avalanche training</small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img src="/img/team/Alex.jpg" class="card-img-top alex" alt="Alex">
+								<div class="card-body">
+									<h5 class="card-title">Alex</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">via-ferratas, trekking, rock-climbing</small>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+				
 			</section>
 
 			<!-- CONTACT -->
@@ -490,8 +517,8 @@
 				</div>
 			</section>
 		</main>
-		<footer>
-			<p>&copy HigherGround 2021</p>
+		<footer class="footer text-center">
+			<p>&copy &nbsp;&nbsp; HigherGround &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 2021</p>
 		</footer>
 
 		<script
@@ -499,6 +526,13 @@
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 			crossorigin="anonymous"
 		></script>
+
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="/js/slick-settings.js"></script>
 
 		<script src="/js/main.js"></script>
 	</body>

@@ -290,6 +290,26 @@ header .fa-chevron-down {
   height: 160px;
 }
 
+.team .card {
+  color: #232b3e;
+}
+
+.team .card-img-top {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .anna,
+.team .alex {
+  -o-object-position: 20% 20%;
+     object-position: 20% 20%;
+}
+
+.team small {
+  text-transform: uppercase;
+}
+
 @media (min-width: 992px) {
   header .hero-img {
     background-image: url("../img/mountaineer-lg.jpg");
