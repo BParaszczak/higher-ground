@@ -342,13 +342,12 @@ header {
 
 	.mail {
 		text-decoration: none;
-		color: $main-color;
 		transition: color .3s;
 	}
 
 	.mail:hover {
 		cursor: pointer;
-		color: $orange;
+		color: $main-color;
 	}
 
 	

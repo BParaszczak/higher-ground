@@ -356,14 +356,13 @@ header .fa-chevron-down {
 
 .contact .mail {
   text-decoration: none;
-  color: #6d98f7;
   -webkit-transition: color .3s;
   transition: color .3s;
 }
 
 .contact .mail:hover {
   cursor: pointer;
-  color: #ffa011;
+  color: #6d98f7;
 }
 
 .contact .contact-shadow {
