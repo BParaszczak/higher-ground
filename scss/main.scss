@@ -316,7 +316,6 @@ header {
 	z-index: -3;
 
 	.address {
-		
 	}
 
 	.contact-name {
@@ -332,7 +331,7 @@ header {
 	}
 
 	.social {
-		transition: transform .3s;
+		transition: transform 0.3s;
 	}
 
 	.social:hover {
@@ -342,15 +341,14 @@ header {
 
 	.mail {
 		text-decoration: none;
-		transition: color .3s;
+		color: $light-text;
+		transition: color 0.3s;
 	}
 
 	.mail:hover {
 		cursor: pointer;
 		color: $main-color;
 	}
-
-	
 
 	.contact-shadow {
 		position: absolute;
@@ -360,9 +358,6 @@ header {
 		background-color: rgba(35, 43, 62, 0.8);
 		z-index: -4;
 	}
-
-
-	
 }
 
 @media (min-width: 768px) {
@@ -375,9 +370,7 @@ header {
 	}
 
 	.contact {
-		
 		background-image: url("../img/contact-lg.jpg");
-			
 	}
 }
 
@@ -396,6 +389,4 @@ header {
 		.carousel-item {
 		}
 	}
-
-	
 }

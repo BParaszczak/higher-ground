@@ -342,10 +342,10 @@ header .fa-chevron-down {
 }
 
 .contact .social {
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .contact .social:hover {
@@ -356,8 +356,9 @@ header .fa-chevron-down {
 
 .contact .mail {
   text-decoration: none;
-  -webkit-transition: color .3s;
-  transition: color .3s;
+  color: #e6edfc;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .contact .mail:hover {
