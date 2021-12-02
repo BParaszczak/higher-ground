@@ -263,24 +263,37 @@ header {
 .mountain-school {
 	text-transform: uppercase;
 
-	i {
-		margin: 40px 0 15px 0;
-		font-size: 42px;
+	.school-card {
+		transition: color .3s;
+
+		i {
+			margin: 40px 0 15px 0;
+			font-size: 42px;
+		}
+	
+		.school-number {
+			font-size: 28px;
+		}
+	
+		.school-text {
+			margin: 0 20px;
+		}
 	}
 
-	.school-number {
-		font-size: 28px;
+	.school-card:hover {
+		color: $orange;
 	}
-
-	.school-text {
-		margin: 0 20px;
-	}
+	
 }
 
 
 .team {
+	background-color: $light-text;
+	color: $main-bg;
+
 	.card {
-		color: $main-bg;
+		box-shadow: 5px 5px 8px $main-bg;
+		margin-bottom: 10px;
 	}
 
 	.card-img-top {

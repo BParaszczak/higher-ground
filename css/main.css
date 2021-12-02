@@ -278,21 +278,37 @@ header .fa-chevron-down {
   text-transform: uppercase;
 }
 
-.mountain-school i {
+.mountain-school .school-card {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.mountain-school .school-card i {
   margin: 40px 0 15px 0;
   font-size: 42px;
 }
 
-.mountain-school .school-number {
+.mountain-school .school-card .school-number {
   font-size: 28px;
 }
 
-.mountain-school .school-text {
+.mountain-school .school-card .school-text {
   margin: 0 20px;
 }
 
-.team .card {
+.mountain-school .school-card:hover {
+  color: #ffa011;
+}
+
+.team {
+  background-color: #e6edfc;
   color: #232b3e;
+}
+
+.team .card {
+  -webkit-box-shadow: 5px 5px 8px #232b3e;
+          box-shadow: 5px 5px 8px #232b3e;
+  margin-bottom: 10px;
 }
 
 .team .card-img-top {
