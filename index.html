@@ -19,7 +19,7 @@
 			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		
 		
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>	
@@ -64,7 +64,7 @@
 
 		<header id="home" class="home">
 			<div class="hero-img">
-				<div class="hero-text">
+				<div class="hero-text" >
 					<h1><span>higher</span>ground</h1>
 					<p>Reaching for adventure</p>
 					<a href="#about-us" type="button" class="btn btn-outline-secondary">
@@ -73,9 +73,10 @@
 				</div>
 				<div class="hero-shadow"></div>
 			</div>
-			<a href="#about-us" class="chevron-down"
-				><i class="fas fa-chevron-down"></i
-			></a>
+			<div>
+				<a href="#about-us" class="chevron-down"><i class="fas fa-chevron-down bounce-top"></i></a>
+			</div>
+			
 			<!-- jebany link nie działa; w przeglądarce dodaje się atrybut aria-hidden="true"; nie wiem jak to obejść-->
 		</header>
 		<main>
@@ -91,38 +92,38 @@
 						</div>
 					</div>
 					<div class="aboutus-wrap row">
-						<div class="aboutus-card col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center" data-aos="flip-down">
 							<p><i class="fas fa-hiking"></i></p>
 							<p class="aboutus-card-title mb-0">hiking</p>
 							<p class="aboutus-card-text">
 								The most epic mountain experience!
 							</p>
 						</div>
-						<div class="aboutus-card col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center" data-aos="flip-down">
 							<p><i class="fas fa-hands-helping"></i></p>
 							<p class="aboutus-card-title mb-0">climbing school</p>
 							<p class="aboutus-card-text">For those about to ROCK!</p>
 						</div>
-						<div class="aboutus-card col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center" data-aos="flip-down">
 							<p><i class="fas fa-skiing"></i></p>
 							<p class="aboutus-card-title mb-0">skitouring</p>
 							<p class="aboutus-card-text">Snow is our reason to go.</p>
 						</div>
-						<div class="aboutus-card col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center" data-aos="flip-down">
 							<p><i class="fas fa-snowman"></i></i></p>
 							<p class="aboutus-card-title mb-0">winter school</p>
 							<p class="aboutus-card-text">
 								Safety first! We will get you through it.
 							</p>
 						</div>
-						<div class="aboutus-card col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center" data-aos="flip-down">
 							<p><i class="far fa-compass"></i></p>
 							<p class="aboutus-card-title mb-0">expeditions</p>
 							<p class="aboutus-card-text">
 								Tell us about your mountain dreams!
 							</p>
 						</div>
-						<div class="aboutus-card col-sm-6 col-md-4 text-center">
+						<div class="aboutus-card col-sm-6 col-md-4 text-center" data-aos="flip-down">
 							<p><i class="far fa-image"></i></p>
 							<p class="aboutus-card-title mb-0">unforgettable time</p>
 							<p class="aboutus-card-text">
@@ -146,7 +147,7 @@
 				<div class="container">
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
 						<div class="col">
-							<div class="card h-100">
+							<div class="card h-100" data-aos="flip-left">
 								<img
 									src="/img/trekking/dolomites.jpg"
 									class="card-img-top"
@@ -163,7 +164,7 @@
 							</div>
 						</div>
 						<div class="col">
-							<div class="card h-100">
+							<div class="card h-100" data-aos="flip-up">
 								<img
 									src="/img/trekking/mont-blanc.jpg"
 									class="card-img-top"
@@ -176,7 +177,7 @@
 							</div>
 						</div>
 						<div class="col">
-							<div class="card h-100">
+							<div class="card h-100" data-aos="flip-down">
 								<img
 									src="/img/trekking/aosta.jpg"
 									class="card-img-top"
@@ -192,7 +193,7 @@
 							</div>
 						</div>
 						<div class="col">
-							<div class="card h-100">
+							<div class="card h-100" data-aos="flip-up">
 								<img
 									src="/img/trekking/grass.jpg"
 									class="card-img-top"
@@ -209,7 +210,7 @@
 							</div>
 						</div>
 						<div class="col">
-							<div class="card h-100">
+							<div class="card h-100" data-aos="flip-right">
 								<img
 									src="/img/trekking/tauern.jpg"
 									class="card-img-top"
@@ -226,7 +227,7 @@
 							</div>
 						</div>
 						<div class="col">
-							<div class="card h-100">
+							<div class="card h-100" data-aos="flip-down">
 								<img
 									src="/img/trekking/misty_mountain.jpg"
 									class="card-img-top"
@@ -243,7 +244,7 @@
 							</div>
 						</div>
 						<div class="col">
-							<div class="card h-100">
+							<div class="card h-100" data-aos="flip-right">
 								<img
 									src="/img/trekking/valleys.jpg"
 									class="card-img-top"
@@ -260,7 +261,7 @@
 							</div>
 						</div>
 						<div class="col">
-							<div class="card h-100">
+							<div class="card h-100" data-aos="flip-left">
 								<img
 									src="/img/trekking/winter-walk.jpg"
 									class="card-img-top"
@@ -555,9 +556,11 @@
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	
 		<script src="/js/slick-settings.js"></script>
-
+		<script src="/js/aos-init.js"></script>
 		<script src="/js/main.js"></script>
 	</body>
 </html>
