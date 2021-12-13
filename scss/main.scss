@@ -329,9 +329,7 @@ header {
 	// z bg-rpt nie wyświetla się tło dla mobili, bez bgrpt wyświetla się sąsiadująco
 	z-index: -3;
 
-	.address {
-	}
-
+.address
 	.contact-name {
 		text-transform: uppercase;
 		color: $orange;
@@ -399,8 +397,8 @@ header {
 		background-image: url("../img/trekking-lg.jpg");
 	}
 
-	.skitours-mountaineering {
-		.carousel-item {
-		}
-	}
+	// .skitours-mountaineering {
+	// 	.carousel-item {
+	// 	}
+	// }
 }

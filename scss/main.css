@@ -1,0 +1,332 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 72px;
+}
+
+body {
+  position: relative;
+  background-color: #232b3e;
+  color: #e6edfc;
+}
+
+.section-header {
+  margin-bottom: 30px;
+}
+.section-header h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-header .dot-box {
+  margin: 0 auto;
+  width: 50px;
+  height: 20px;
+  align-items: center;
+}
+.section-header .dot-box .dot-1 {
+  margin: 0 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.section-header .dot-box .dot-2 {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+.section-header .dot-box .dot {
+  margin: 0 auto;
+  background-color: #ffa011;
+}
+
+nav {
+  position: fixed;
+  text-transform: uppercase;
+  z-index: 20;
+  background-color: #232b3e;
+  opacity: 0.8;
+}
+nav .navbar-brand {
+  color: #6d98f7;
+}
+nav .navbar-brand span {
+  color: #e6edfc;
+}
+nav .nav-link {
+  color: #e6edfc;
+  transition: color 0.3s;
+}
+nav .nav-link:hover {
+  color: #6d98f7;
+}
+nav .active {
+  color: #ffa011;
+}
+nav .fa-bars {
+  color: #e6edfc;
+}
+nav .navbar-toggler:focus {
+  border: 1px solid #232b3e;
+  box-shadow: none;
+}
+
+header {
+  position: relative;
+}
+header .hero-img {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/mountaineer-sm.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+header .hero-text {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+header .hero-text h1 {
+  margin: 0 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #6d98f7;
+  font-size: 32px;
+}
+header .hero-text h1 span {
+  color: #e6edfc;
+}
+header .hero-text p {
+  font-size: 26px;
+}
+header .hero-text .btn {
+  margin-top: 10px;
+  color: #ffa011;
+  border-color: #ffa011;
+  transition: background-color scale 0.3s;
+}
+header .hero-text .btn:hover {
+  background-color: #232b3e;
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+header .hero-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 50, 80, 0.6);
+  z-index: 2;
+}
+header .fa-chevron-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffa011;
+  z-index: 4;
+}
+
+.about-us i {
+  font-size: 30px;
+}
+.about-us .aboutus-card {
+  margin-bottom: 30px;
+  transition: color 0.3s;
+}
+.about-us .aboutus-card:hover {
+  color: #6d98f7;
+}
+.about-us .aboutus-card-title {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.trekking {
+  position: relative;
+  background-image: url("../img/trekking-sm.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #232b3e;
+  z-index: -12;
+}
+.trekking h2 {
+  color: #e6edfc;
+}
+.trekking .trekking-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 43, 62, 0.8);
+  z-index: -3;
+}
+.trekking .container {
+  margin-bottom: 40px;
+}
+
+.skitours-mountaineering {
+  background-color: #e6edfc;
+  color: #232b3e;
+}
+.skitours-mountaineering q {
+  font-size: 20px;
+}
+.skitours-mountaineering .carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+}
+.skitours-mountaineering .carousel-item {
+  position: relative;
+  height: 500px;
+}
+.skitours-mountaineering .carousel-item img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.skitours-mountaineering .carousel-item .mtn-climbing,
+.skitours-mountaineering .carousel-item .ice-climb {
+  bottom: 0;
+}
+.skitours-mountaineering .carousel-item .on-top {
+  bottom: -120px;
+}
+.skitours-mountaineering .carousel-item .skiing {
+  bottom: -40px;
+}
+.skitours-mountaineering .carousel-item .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(3, 5, 12, 0.7);
+  color: #e6edfc;
+}
+.skitours-mountaineering .card-body {
+  height: 160px;
+}
+
+.mountain-school {
+  text-transform: uppercase;
+}
+.mountain-school .school-card {
+  transition: color 0.3s;
+}
+.mountain-school .school-card i {
+  margin: 40px 0 15px 0;
+  font-size: 42px;
+}
+.mountain-school .school-card .school-number {
+  font-size: 28px;
+}
+.mountain-school .school-card .school-text {
+  margin: 0 20px;
+}
+.mountain-school .school-card:hover {
+  color: #ffa011;
+}
+
+.team {
+  background-color: #e6edfc;
+  color: #232b3e;
+}
+.team .card {
+  box-shadow: 5px 5px 8px #232b3e;
+  margin-bottom: 10px;
+}
+.team .card-img-top {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card-body {
+  height: 200px;
+}
+.team .card-footer {
+  height: 70px;
+}
+.team .anna,
+.team .alex {
+  -o-object-position: 20% 20%;
+     object-position: 20% 20%;
+}
+.team small {
+  text-transform: uppercase;
+}
+
+.contact {
+  position: relative;
+  color: #e6edfc;
+  background-image: url("../img/contact-sm.jpg");
+  background-attachment: fixed;
+  background-position: cover;
+  background-repeat: no-repeat;
+  z-index: -3;
+}
+.contact .address .contact-name {
+  text-transform: uppercase;
+  color: #ffa011;
+  font-size: 20px;
+}
+.contact i {
+  padding: 4px;
+  color: #ffa011;
+  font-size: 24px;
+}
+.contact .social {
+  transition: transform 0.3s;
+}
+.contact .social:hover {
+  color: #6d98f7;
+  transform: scale(1.1);
+}
+.contact .mail {
+  text-decoration: none;
+  color: #e6edfc;
+  transition: color 0.3s;
+}
+.contact .mail:hover {
+  cursor: pointer;
+  color: #6d98f7;
+}
+.contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 43, 62, 0.8);
+  z-index: -4;
+}
+
+@media (min-width: 768px) {
+  header .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .contact {
+    background-image: url("../img/contact-lg.jpg");
+  }
+}
+@media (min-width: 992px) {
+  header .hero-img {
+    background-image: url("../img/mountaineer-lg.jpg");
+  }
+
+  .trekking {
+    background-image: url("../img/trekking-lg.jpg");
+  }
+}/*# sourceMappingURL=main.css.map */
