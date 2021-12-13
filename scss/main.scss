@@ -3,402 +3,401 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-	scroll-padding-top: 72px;
+  scroll-padding-top: 72px;
 }
 
 body {
-	position: relative;
-	background-color: $main-bg;
-	color: $light-text;
+  position: relative;
+  background-color: $main-bg;
+  color: $light-text;
 }
 
 .section-header {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 
-	h2 {
-		text-transform: uppercase;
-		text-align: center;
-	}
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
 
-	.dot-box {
-		margin: 0 auto;
-		width: 50px;
-		height: 20px;
-		align-items: center;
+  .dot-box {
+    margin: 0 auto;
+    width: 50px;
+    height: 20px;
+    align-items: center;
 
-		.dot-1 {
-			margin: 0 10px;
-			width: 6px;
-			height: 6px;
-			border-radius: 50%;
-		}
+    .dot-1 {
+      margin: 0 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
 
-		.dot-2 {
-			width: 9px;
-			height: 9px;
-			border-radius: 50%;
-		}
+    .dot-2 {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+    }
 
-		.dot {
-			margin: 0 auto;
+    .dot {
+      margin: 0 auto;
 
-			background-color: $orange;
-		}
-	}
+      background-color: $orange;
+    }
+  }
 }
 
 nav {
-	position: fixed;
-	text-transform: uppercase;
-	z-index: 20;
-	background-color: $main-bg;
-	opacity: 0.8;
+  position: fixed;
+  text-transform: uppercase;
+  z-index: 20;
+  background-color: $main-bg;
+  opacity: 0.8;
+  
 
-	.navbar-brand {
-		color: $main-color;
+  .navbar-brand {
+    color: $main-color;
 
-		span {
-			color: $light-text;
-		}
-	}
+    span {
+      color: $light-text;
+    }
+  }
 
-	.nav-link {
-		color: $light-text;
-		transition: color 0.3s;
-	}
+  .nav-link {
+    color: $light-text;
+    transition: color 0.3s;
+    
+  }
 
-	.nav-link:hover {
-		color: $main-color;
-	}
+  .nav-link:hover {
+    color: $main-color;
+  }
 
-	.active {
-		color: $orange;
-	}
+  .active {
+    color: $orange;
+  }
 
-	.fa-bars {
-		color: $light-text;
-	}
+  .fa-bars {
+    color: $light-text;
+  }
 
-	.navbar-toggler:focus {
-		border: 1px solid $main-bg;
-		box-shadow: none;
-	}
+  .navbar-toggler:focus {
+    border: 1px solid $main-bg;
+    box-shadow: none;
+  }
 }
 
 header {
-	position: relative;
+  position: relative;
 
-	.hero-img {
-		height: 100vh;
-		width: 100%;
-		background-image: url("../img/mountaineer-sm.jpg");
-		background-position: center;
-		background-size: cover;
-		z-index: 0;
-	}
+  .hero-img {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/mountaineer-sm.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+  }
 
-	.hero-text {
-		position: absolute;
-		display: flex;
-		height: 100%;
-		width: 100%;
-		padding: 10px;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		z-index: 5;
+  .hero-text {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
 
-		h1 {
-			margin: 0 10px;
-			padding: 10px;
-			text-transform: uppercase;
-			color: $main-color;
-			font-size: 32px;
+    h1 {
+      margin: 0 10px;
+      padding: 10px;
+      text-transform: uppercase;
+      color: $main-color;
+      font-size: 32px;
 
-			span {
-				color: $light-text;
-			}
-		}
+      span {
+        color: $light-text;
+      }
+    }
 
-		p {
-			font-size: 26px;
-		}
+    p {
+      font-size: 26px;
+    }
 
-		.btn {
-			margin-top: 10px;
-			color: $orange;
-			border-color: $orange;
-			transition: background-color scale 0.3s;
-		}
+    .btn {
+      margin-top: 10px;
+      color: $orange;
+      border-color: $orange;
+      transition: background-color scale 0.3s;
+    }
 
-		.btn:hover {
-			background-color: $main-bg;
-			opacity: 0.7;
-			transform: scale(1.1);
-		}
-	}
+    .btn:hover {
+      background-color: $main-bg;
+      opacity: 0.7;
+      transform: scale(1.1);
+    }
+  }
 
-	.hero-shadow {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(11, 50, 80, 0.6);
-		z-index: 2;
-	}
+  .hero-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 50, 80, 0.6);
+    z-index: 2;
+  }
 
-	.fa-chevron-down {
-		position: absolute;
-		bottom: 30px;
-		left: 50%;
-		transform: translateX(-50%);
-		color: $orange;
-		z-index: 4;
-	}
+  .fa-chevron-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $orange;
+    z-index: 4;
+  }
 }
 
 .about-us {
-	i {
-		font-size: 30px;
-	}
+  i {
+    font-size: 30px;
+  }
 
-	.aboutus-card {
-		margin-bottom: 30px;
-		transition: color 0.3s;
-	}
+  .aboutus-card {
+    margin-bottom: 30px;
+    transition: color 0.3s;
+  }
 
-	.aboutus-card:hover {
-		color: $main-color;
-	}
+  .aboutus-card:hover {
+    color: $main-color;
+  }
 
-	.aboutus-card-title {
-		text-transform: uppercase;
-		font-size: 20px;
-	}
+  .aboutus-card-title {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
 }
 
 .trekking {
-	position: relative;
-	background-image: url("../img/trekking-sm.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	color: $main-bg;
-	z-index: -12;
+  position: relative;
+  background-image: url("../img/trekking-sm.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: $main-bg;
+  z-index: -12;
 
-	h2 {
-		color: $light-text;
-	}
+  h2 {
+    color: $light-text;
+  }
 
-	.trekking-shadow {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(35, 43, 62, 0.8);
-		z-index: -3;
-	}
+  .trekking-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 43, 62, 0.8);
+    z-index: -3;
+  }
 
-	.container {
-		margin-bottom: 40px;
-	}
+  .container {
+    margin-bottom: 40px;
+  }
 }
 
 .skitours-mountaineering {
-	background-color: $light-text;
-	color: $main-bg;
+  background-color: $light-text;
+  color: $main-bg;
 
-	q {
-		font-size: 20px;
-	}
+  q {
+    font-size: 20px;
+  }
 
-	.carousel-indicators {
-		position: absolute;
-		bottom: 10px;
-	}
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+  }
 
-	.carousel-item {
-		position: relative;
-		height: 500px;
+  .carousel-item {
+    position: relative;
+    height: 500px;
 
-		img {
-			position: absolute;
-			object-fit: cover;
-		}
+    img {
+      position: absolute;
+      object-fit: cover;
+    }
 
-		.mtn-climbing,
-		.ice-climb {
-			bottom: 0;
-		}
+    .mtn-climbing,
+    .ice-climb {
+      bottom: 0;
+    }
 
-		.on-top {
-			bottom: -120px;
-		}
+    .on-top {
+      bottom: -120px;
+    }
 
-		.skiing {
-			bottom: -40px;
-		}
+    .skiing {
+      bottom: -40px;
+    }
 
-		.carousel-caption {
-			position: absolute;
-			left: 0;
-			right: 0;
-			padding: 20px;
-			background-color: rgba(3, 5, 12, 0.7);
-			color: $light-text;
-		}
-	}
+    .carousel-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background-color: rgba(3, 5, 12, 0.7);
+      color: $light-text;
+    }
+  }
 
-	.card-body {
-		height: 160px;
-	}
+  .card-body {
+    height: 160px;
+  }
 }
 
 .mountain-school {
-	text-transform: uppercase;
+  text-transform: uppercase;
 
-	.school-card {
-		transition: color .3s;
+  .school-card {
+    transition: color 0.3s;
 
-		i {
-			margin: 40px 0 15px 0;
-			font-size: 42px;
-		}
-	
-		.school-number {
-			font-size: 28px;
-		}
-	
-		.school-text {
-			margin: 0 20px;
-		}
-	}
+    i {
+      margin: 40px 0 15px 0;
+      font-size: 42px;
+    }
 
-	.school-card:hover {
-		color: $orange;
-	}
-	
+    .school-number {
+      font-size: 28px;
+    }
+
+    .school-text {
+      margin: 0 20px;
+    }
+  }
+
+  .school-card:hover {
+    color: $orange;
+  }
 }
 
-
 .team {
-	background-color: $light-text;
-	color: $main-bg;
+  background-color: $light-text;
+  color: $main-bg;
 
-	.card {
-		box-shadow: 5px 5px 8px $main-bg;
-		margin-bottom: 10px;
-	}
+  .card {
+    box-shadow: 5px 5px 8px $main-bg;
+    margin-bottom: 10px;
+  }
 
-	.card-img-top {
-		height: 200px;
-		object-fit: cover;
-	}
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
 
-	.card-body {
-		height: 200px;
-	}
+  .card-body {
+    height: 200px;
+  }
 
-	.card-footer {
-		height: 70px;
-	}
+  .card-footer {
+    height: 70px;
+  }
 
-	.anna,
-	.alex {
-		object-position: 20% 20%;
-	}
+  .anna,
+  .alex {
+    object-position: 20% 20%;
+  }
 
-	small {
-		text-transform: uppercase;
-	}
+  small {
+    text-transform: uppercase;
+  }
 }
 
 .contact {
-	position: relative;
-	color: $light-text;
-	background-image: url("../img/contact-sm.jpg");
-	background-attachment: fixed;
-	background-position: cover;
-	background-repeat: no-repeat;
-	// z bg-rpt nie wyświetla się tło dla mobili, bez bgrpt wyświetla się sąsiadująco
-	z-index: -3;
+  position: relative;
+  color: $light-text;
+  background-image: url("../img/contact-sm.jpg");
+  background-attachment: fixed;
+  background-position: cover;
+  background-repeat: no-repeat;
+  // z bg-rpt nie wyświetla się tło dla mobili, bez bgrpt wyświetla się sąsiadująco
+  z-index: -3;
 
-.address
-	.contact-name {
-		text-transform: uppercase;
-		color: $orange;
-		font-size: 20px;
-	}
+  .address .contact-name {
+    text-transform: uppercase;
+    color: $orange;
+    font-size: 20px;
+  }
 
-	i {
-		padding: 4px;
-		color: $orange;
-		font-size: 24px;
-	}
+  i {
+    padding: 4px;
+    color: $orange;
+    font-size: 24px;
+  }
 
-	.social {
-		transition: transform 0.3s;
-	}
+  .social {
+    transition: transform 0.3s;
+  }
 
-	.social:hover {
-		color: $main-color;
-		transform: scale(1.1);
-	}
+  .social:hover {
+    color: $main-color;
+    transform: scale(1.1);
+  }
 
-	.mail {
-		text-decoration: none;
-		color: $light-text;
-		transition: color 0.3s;
-	}
+  .mail {
+    text-decoration: none;
+    color: $light-text;
+    transition: color 0.3s;
+  }
 
-	.mail:hover {
-		cursor: pointer;
-		color: $main-color;
-	}
+  .mail:hover {
+    cursor: pointer;
+    color: $main-color;
+  }
 
-	.contact-shadow {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(35, 43, 62, 0.8);
-		z-index: -4;
-	}
+  .contact-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 43, 62, 0.8);
+    z-index: -4;
+  }
 }
 
 @media (min-width: 768px) {
-	header {
-		.hero-text {
-			h1 {
-				font-size: 48px;
-			}
-		}
-	}
+  header {
+    .hero-text {
+      h1 {
+        font-size: 48px;
+      }
+    }
+  }
 
-	.contact {
-		background-image: url("../img/contact-lg.jpg");
-	}
+  .contact {
+    background-image: url("../img/contact-lg.jpg");
+  }
 }
 
 @media (min-width: 992px) {
-	header {
-		.hero-img {
-			background-image: url("../img/mountaineer-lg.jpg");
-		}
-	}
+  header {
+    .hero-img {
+      background-image: url("../img/mountaineer-lg.jpg");
+    }
+  }
 
-	.trekking {
-		background-image: url("../img/trekking-lg.jpg");
-	}
+  .trekking {
+    background-image: url("../img/trekking-lg.jpg");
+  }
 
-	// .skitours-mountaineering {
-	// 	.carousel-item {
-	// 	}
-	// }
+  // .skitours-mountaineering {
+  // 	.carousel-item {
+  // 	}
+  // }
 }
